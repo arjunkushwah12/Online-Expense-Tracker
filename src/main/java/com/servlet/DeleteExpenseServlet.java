@@ -27,12 +27,12 @@ public class DeleteExpenseServlet extends HttpServlet
 		HttpSession session=req.getSession();
 		if(f)
 		{
-			session.setAttribute("msg", "Delete successfully");
+			session.setAttribute("msg", "Delete Successfully The Expense");
 			resp.sendRedirect("user/view_expense.jsp");
 		}
 		else
 		{ 
-			session.setAttribute("msg", "Not Delete Successfully");
+			session.setAttribute("msg", "Not Delete Successfully The Expense");
 			resp.sendRedirect("user/view_expense.jsp");
 		}
 	
