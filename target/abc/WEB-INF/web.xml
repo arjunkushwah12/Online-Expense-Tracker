@@ -1,0 +1,28 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+         version="3.0">
+
+  <display-name>Online Expense Tracker</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+   <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <!-- Define servlet for handling registration -->
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.servlet.RegisterServlet</servlet-class>
+  </servlet>
+
+  <!-- Map the servlet to the URL pattern "/l" -->
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/l</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
